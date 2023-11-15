@@ -6,7 +6,7 @@ This project serves a Tidymodels R model through FastAPI using rpy2. There are s
 -   Using vetiver
 -   Using velvet
 
-Although these methods all have their advantages, the R solutions seems rather closed or tied to Posit. The proposed setup is aimed at a setup that already has investments in FastAPI or Python, for example through connected middleware.
+Although these methods all have their advantages, the R solutions seem rather closed or tied to Posit. The proposed setup is aimed at a setup that already has investments in FastAPI or Python, for example through connected middleware.
 
 The setup is configured to create a container with 2 CPU and 4 worker threads. Each worker thread gets its own R instance. Because each FastAPI function is called standard with await, and R is not assumed to be async, threading should actually just work.
 
