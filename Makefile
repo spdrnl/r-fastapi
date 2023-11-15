@@ -2,8 +2,8 @@ cpus?=2
 workers := $(shell echo ${cpus}*2 | bc)
 
 install-ubuntu:
-	sudo apt-get install podman pipx
-	pipx poetry
+	sudo apt-get install podman pipx ab
+	pipx install poetry
 	pipx inject poetry poetry-plugin-export
 
 run-api:
