@@ -84,6 +84,9 @@ Two additional command are more for development:
 
 The first command generates a requirements.txt that is used to create the container. The second command generates an overview of R libraries that should be included in the container.
 
+## Mixed Python and R setup
+The project uses renv on the R side and poetry on the Python side. Both renv and poetry allow for the pinning down of both the libraries and their versions. This should provide for a stable setup.
+For building the docker container a requirements file is generated using poetry. The R libraries with their version can be exported using 'make generate-requirements'. This generates a package_versions file, which can be pasted in the Containerfile.
 ## Improvements
 
 The following improvements could be made:
