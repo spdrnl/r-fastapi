@@ -30,6 +30,16 @@ The setup does not seem to deviate too much from a deployment with sklearn pipel
 
 And additional library called RhpcBLASctl is used to set the number of BLAS threads to 1. Otherwise concurrency could get messy.
 
+## Modeling
+A small three feature linear model with 3 features is generated with Tidymodels. The following steps are taken:
+
+- The data is split in analysis and testing.
+- Using v-fold cross-validation a small grid search is performed for a linear model.
+- The best settings are used to fit the model on the complete analysis set.
+- The workflow is slimmed down for prediction using the butcher library.
+
+This setup represents a minimal viable workflow for model development.
+
 ## Performance
 
 Performance for a small three variable linear model is around 100 requests per second per CPU. If this performance can persist over longer periods, it should cover quite some use cases.
