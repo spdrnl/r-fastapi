@@ -38,7 +38,7 @@ For those not used to Makefiles, I also wasn't. Until I found out that Makefiles
 
 After cloning renv and poetry should ensure that starting the project just works:
 
-- Run renv::recover() after opening the project with R studio to install the R libraries.
+- Run renv::restore() after opening the project with R studio to install the R libraries.
 - Run 'poetry install' in a terminal to create a Python environment. 
 
 Use the script models.R to create and save a simple R model. The Python script model_test.py can be run from R Studio too, once the virtual env has been configured in the project settings. This script shows the basic workings of integrating R with Python using rpy2.
