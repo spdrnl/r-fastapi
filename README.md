@@ -16,6 +16,8 @@ The setup is configured to create a FastAPI container with 2 CPU and 4 worker th
 
 If all is well, middleware investments around monitoring in FastAPI, or any other Python setup, are reusable for Tidymodels. I think this is a step ahead.
 
+A longer motivatio for this project can be found here: https://medium.com/@sanne.de.roever/im-serious-how-to-leverage-python-to-deploy-r-tidymodels-8264f23921d3
+
 ## Prerequisites
 
 This setup uses:
