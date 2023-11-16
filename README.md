@@ -88,7 +88,7 @@ This setup represents a minimal viable workflow for model development.
 
 ## Performance
 
-Performance for a small three variable linear model is around 80 requests per second per CPU. If this performance can persist over longer periods, it should cover quite some use cases.
+Performance for a small three variable linear model is 100+ requests per second per CPU. If this performance can persist over longer periods, it should cover quite some use cases.
 
 Because a linear model is so simple, the performance should basically be seen as the overhead of Python and R together for an API call. This overhead seems not overly burdensome. Note that both Python and R are in essence scripting languages.
 
