@@ -3,6 +3,9 @@
 library(tidymodels)
 library(tidyverse)
 library(butcher)
+library(RhpcBLASctl)
+
+print(sprintf("The number of BLAS threads is %s", blas_get_num_procs()))
 
 ############ Regression Example ############
 ### get data
