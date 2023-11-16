@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.3.1",
+    "Version": "4.3.2",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -230,6 +230,24 @@
         "sass"
       ],
       "Hash": "283015ddfbb9d7bf15ea9f0b5698f0d9"
+    },
+    "butcher": {
+      "Package": "butcher",
+      "Version": "0.3.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "lobstr",
+        "methods",
+        "purrr",
+        "rlang",
+        "tibble",
+        "utils",
+        "vctrs"
+      ],
+      "Hash": "0d2c66e9ab0e4f3adfbde1cbb2ed244c"
     },
     "cachem": {
       "Package": "cachem",
@@ -1096,6 +1114,21 @@
         "R"
       ],
       "Hash": "4fbd3679ec8ee169ba28d4b1ea7d0e8f"
+    },
+    "lobstr": {
+      "Package": "lobstr",
+      "Version": "1.1.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cpp11",
+        "crayon",
+        "methods",
+        "prettyunits",
+        "rlang"
+      ],
+      "Hash": "f2a94f8fc9db382a642e965339635ad6"
     },
     "lubridate": {
       "Package": "lubridate",
