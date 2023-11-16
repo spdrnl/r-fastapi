@@ -7,10 +7,10 @@ install-ubuntu:
 	pipx inject poetry poetry-plugin-export
 
 run-api:
-	poetry run uvicorn app.main:app
+	poetry run uvicorn app.main:app --port 8080 --workers 4 --log-level critical
 
 dev-api:
-	poetry run uvicorn app.main:app --reload
+	poetry run uvicorn app.main:app --port 8080 --reload
 
 test-stress:
 	ab -n 10000 -v 2 -c ${cpus} -p data.json -T application/json \
