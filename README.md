@@ -24,10 +24,13 @@ This setup uses:
 -   podman
 -   python (3.11)
 -   poetry
+-   poetry-plugin-export
 -   R (4.3.1)
 -   ab (Apache bench)
 
 If your Python or R versions differ, try changing settings in pyproject.toml, then at the end of poetry.lock and renv.lock.
+
+Poetry and the poetry-plugin-export can be installed using pipx.
 
 For those not used to Makefiles, I also wasn't. Until I found out that Makefiles are a great way to gather and automate all those command line snippets that make a project work. No need to remember these, store 'm in a Makefile!
 
